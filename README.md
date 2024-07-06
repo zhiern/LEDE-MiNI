@@ -10,4 +10,3 @@
 - 固件集成的所有 ipk 插件全部打包在 Packages 文件中，可以在 [Releases](https://github.com/oppen321/LEDE-MiNI/releases) 内进行下载
 - 项目编译的固件插件为最新版本，最新版插件可能有 BUG，如果之前使用稳定则无需追新
 - 第一次使用请采用全新安装，避免出现升级失败以及其他一些可能的 BUG  
-
