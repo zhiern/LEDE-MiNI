@@ -34,7 +34,12 @@ find ./ | grep Makefile | grep mosdns | xargs rm -f
 git clone https://github.com/sbwml/luci-app-mosdns -b v5 package/mosdns
 git clone https://github.com/sbwml/v2ray-geodata package/v2ray-geodata
 
-# kenzo源
+# kenzo源 科学上网插件与依赖
 sed -i '2i src-git small https://github.com/kenzok8/small' feeds.conf.default
+
+# istoreos商店
+git clone -b main https://github.com/linkease/istore-ui package/istoreos-ui
+git clone -b main https://github.com/linkease/istore package/istoreos
+
 
 ./scripts/feeds install -a
