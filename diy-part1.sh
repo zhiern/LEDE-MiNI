@@ -49,5 +49,7 @@ git clone -b main https://github.com/oppen321/luci-app-adguardhome package/luci-
 
 # OpenAppFilter应用过滤
 git clone -b main https://github.com/oppen321/OpenAppFilter package/OpenAppFilter
+
+
 ./scripts/feeds update -a
 ./scripts/feeds install -a
