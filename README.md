@@ -67,7 +67,7 @@
    ./scripts/feeds install -a
    ```
 
-4. 复制 diy-script.sh 文件内所有内容到命令行，添加自定义插件和自定义设置
+4. 复制 diy-part1.sh 文件内所有内容到命令行，添加自定义插件和自定义设置
 
 5. 命令行输入 `make menuconfig` 选择配置，选好配置后导出差异部分到 seed.config 文件
 
