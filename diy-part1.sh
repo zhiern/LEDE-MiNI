@@ -22,7 +22,7 @@ rm -rf package/lean/luci-app-argon-config
 rm -rf feeds/packages/lang/golang
 
 # golong 
-git clone https://github.com/kenzok8/golang feeds/packages/lang/golang
+git clone -b main https://github.com/kenzok8/golang feeds/packages/lang/golang
 
 # argon主题
 git clone -b 18.06 https://github.com/jerrykuku/luci-app-argon-config package/luci-app-argon-config
