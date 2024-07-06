@@ -41,5 +41,8 @@ sed -i '2i src-git small https://github.com/kenzok8/small' feeds.conf.default
 git clone -b main https://github.com/linkease/istore-ui package/istoreos-ui
 git clone -b main https://github.com/linkease/istore package/istoreos
 
+# Adguardhome
+git clone -b master https://github.com/kongfl888/luci-app-adguardhome package/adguardhome
+
 
 ./scripts/feeds install -a
