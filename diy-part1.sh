@@ -37,6 +37,9 @@ git clone https://github.com/sbwml/v2ray-geodata package/v2ray-geodata
 # kenzo源 科学上网插件与依赖
 sed -i '2i src-git small https://github.com/kenzok8/small' feeds.conf.default
 
+# openclash
+git clone -b master https://github.com/vernesong/OpenClash package/openclash
+
 # istoreos商店
 git clone -b main https://github.com/linkease/istore-ui package/istoreos-ui
 git clone -b main https://github.com/linkease/istore package/istoreos
