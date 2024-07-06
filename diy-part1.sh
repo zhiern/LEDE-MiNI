@@ -18,14 +18,14 @@
 #echo 'src-git passwall https://github.com/xiaorouji/openwrt-passwall' >>feeds.conf.default
 
 rm -rf feeds/luci/themes/luci-theme-argon
-rm -rf luci-app-argon-config
+rm -rf package/lean/luci-app-argon-config
 rm -rf feeds/packages/lang/golang
 
 # golong 
 git clone https://github.com/kenzok8/golang feeds/packages/lang/golang
 
 # argon主题
-git clone -b 18.06 https://github.com/jerrykuku/luci-app-argon-config.git luci-app-argon-config
+git clone -b 18.06 https://github.com/jerrykuku/luci-app-argon-config package/luci-app-argon-config
 git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git package/downloads/luci-theme-argon
 
 # Mosdns
