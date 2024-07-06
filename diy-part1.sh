@@ -38,7 +38,7 @@ git clone https://github.com/sbwml/v2ray-geodata package/v2ray-geodata
 sed -i '2i src-git small https://github.com/kenzok8/small' feeds.conf.default
 
 # openclash
-git clone -b master https://github.com/vernesong/OpenClash package/openclash
+git clone -b main https://github.com/oppen321/openclash package/openclash
 
 # istoreos商店
 git clone -b main https://github.com/linkease/istore-ui package/istoreos-ui
