@@ -47,12 +47,6 @@ git clone -b main https://github.com/linkease/istore package/istoreos
 # Adguardhome
 git clone -b main https://github.com/oppen321/luci-app-adguardhome package/luci-app-adguardhome
 
-# OpenAppFilter应用过滤
-git clone -b main https://github.com/oppen321/OpenAppFilter package/OpenAppFilter
-
-# alist
-git clone -b main https://github.com/oppen321/luci-app-alist package/alist
-
 
 ./scripts/feeds update -a
 ./scripts/feeds install -a
