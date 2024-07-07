@@ -22,7 +22,7 @@ rm -rf package/lean/luci-app-argon-config
 rm -rf feeds/packages/lang/golang
 
 # golong 
-git clone https://github.com/kenzok8/golang feeds/packages/lang/golang
+git clone -b main https://github.com/kenzok8/golang feeds/packages/lang/golang
 
 # argon主题
 git clone -b 18.06 https://github.com/jerrykuku/luci-app-argon-config package/luci-app-argon-config
@@ -31,8 +31,8 @@ git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git package/dow
 # Mosdns
 find ./ | grep Makefile | grep v2ray-geodata | xargs rm -f
 find ./ | grep Makefile | grep mosdns | xargs rm -f
-git clone -b main https://github.com/oppen321/luci-app-mosdns package/mosdns
-git clone -b main https://github.com/oppen321/v2ray-geodata package/v2ray-geodata
+git clone https://github.com/sbwml/luci-app-mosdns -b v5 package/mosdns
+git clone https://github.com/sbwml/v2ray-geodata package/v2ray-geodata
 
 # kenzo源 科学上网插件与依赖
 sed -i '2i src-git small https://github.com/kenzok8/small' feeds.conf.default
@@ -49,6 +49,9 @@ git clone -b main https://github.com/oppen321/luci-app-adguardhome package/luci-
 
 # OpenAppFilter应用过滤
 git clone -b main https://github.com/oppen321/OpenAppFilter package/OpenAppFilter
+
+# alist
+git clone -b main https://github.com/oppen321/luci-app-alist package/alist
 
 
 ./scripts/feeds update -a
